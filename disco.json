@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "services": {
+    "web": {
+      "port": 8080,
+      "health": {
+        "command": "wget -qO- http://127.0.0.1:8080/settings >/dev/null"
+      }
+    }
+  }
+}
