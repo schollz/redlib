@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM rust:1.85-slim-bookworm AS builder
+FROM rust:1.89-slim-bookworm AS builder
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
